@@ -898,7 +898,11 @@ bool Notepad_plus::fileCloseAll(bool doDeleteBackup, bool isSnapshotMode)
 
 	//closes all documents, makes the current view the only one visible
 
-	//first check if we need to save any file
+	//first confirm action
+	if (Notepad_plus::doCloseAllOrNot() == IDNO)
+		return false;
+
+	//then check if we need to save any file
 	for (size_t i = 0; i < _mainDocTab.nbItem() && !noSaveToAll; ++i)
 	{
 		BufferID id = _mainDocTab.getBufferByIndex(i);
@@ -1076,7 +1080,13 @@ bool Notepad_plus::fileCloseAll(bool doDeleteBackup, bool isSnapshotMode)
 
 bool Notepad_plus::fileCloseAllGiven(const std::vector<int> &krvecBufferIndexes)
 {
-	// First check if we need to save any file.
+
+	// First confirm action
+
+	if (Notepad_plus::doCloseAllOrNot() == IDNO)
+		return false;
+
+	// Then check if we need to save any file.
 
 	std::vector<int>::const_iterator itIndexesEnd = krvecBufferIndexes.end();
 	bool noSaveToAll = false;
@@ -1200,7 +1210,11 @@ bool Notepad_plus::fileCloseAllButCurrent()
 
 	//closes all documents, makes the current view the only one visible
 
-	//first check if we need to save any file
+	//first confirm action
+	if (Notepad_plus::doCloseAllOrNot() == IDNO)
+		return false;
+
+	//then check if we need to save any file
 	for (size_t i = 0; i < _mainDocTab.nbItem() && !noSaveToAll; ++i)
 	{
 		BufferID id = _mainDocTab.getBufferByIndex(i);

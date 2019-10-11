@@ -444,6 +444,7 @@ private:
 	int doSaveOrNot(const TCHAR *fn, bool isMulti = false);
 	int doReloadOrNot(const TCHAR *fn, bool dirty);
 	int doCloseOrNot(const TCHAR *fn);
+	int doCloseAllOrNot(void);
 	int doDeleteOrNot(const TCHAR *fn);
 
 	void enableMenu(int cmdID, bool doEnable) const;
