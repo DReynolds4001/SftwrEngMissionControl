@@ -1917,7 +1917,7 @@ int Notepad_plus::doCloseOrNot(const TCHAR *fn)
 
 int Notepad_plus::doCloseAllOrNot(void)
 {
-	return _nativeLangSpeaker.messageBox("DoCloseeOrNotAll",
+	return _nativeLangSpeaker.messageBox("DoCloseAllOrNot",
 		_pPublicInterface->getHSelf(),
 		TEXT("Are you sure you want to close ALL selected documents?"),
 		TEXT("Close All"),
