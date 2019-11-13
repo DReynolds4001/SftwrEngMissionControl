@@ -389,6 +389,7 @@
 			 	<Item id="1641" name="Hľadať všetko v aktuálnom dokumente"/>
 				<Item id="1686" name="Priehľadnosť"/>
 				<Item id="1703" name=". -> nový riadok"/>
+        <Item id="1725" name="Výmena"/>
             </Find>
 
 			<FindCharsInRange title = "Hľadať znaky v rozsahu...">
