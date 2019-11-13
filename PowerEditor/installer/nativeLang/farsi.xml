@@ -370,6 +370,7 @@
                 <Item id="1641" name="یافتن همه در سند فعلی"/>
                 <Item id="1686" name="پشت نمایی"/>
                 <Item id="1703" name="&amp;. تطبیق با خط جدید"/>
+                <Item id="1725" name="تبادل"/>
             </Find>
 
             <FindCharsInRange title="یافتن کاراکتر ها در محدوده...">

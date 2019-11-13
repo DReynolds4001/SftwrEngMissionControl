@@ -330,6 +330,7 @@ By ChesÃƒÂºs D. Trigo [xuxinho7@gmail.com] & softaragones [softaragones@soft
 				<Item id="1641" name="Mirar-lo tot en o documento actual"/>
 				<Item id="1686" name="Transparencia"/>
 				<Item id="1703" name="&amp;. mirar nueva linia"/>
+        <Item id="1725" name="intercambiar"/>
             </Find>
 			<FindCharsInRange title="Mirar intervalo de caracters...">
 				<Item id="2910" name="Mirar"/>

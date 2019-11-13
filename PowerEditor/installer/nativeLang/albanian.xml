@@ -365,6 +365,7 @@
                 <Item id="1641" name="Gjej të gjitha në dokumentin aktual"/>
                 <Item id="1686" name="Transparencë"/>
                 <Item id="1703" name="&amp;. përkime linjë re"/>
+                <Item id="1725" name="shkëmbim"/>
             </Find>
 
             <FindCharsInRange title="Gjej karakterret në shtrirje...">

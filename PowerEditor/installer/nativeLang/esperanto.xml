@@ -369,6 +369,7 @@
 				<Item id="1641" name="Serĉu ĉiujn en la aktiva dosiero"/>
 				<Item id="1686" name="Travidebla"/>
 				<Item id="1703" name="&amp;. kaptas linifinon"/>
+        <Item id="1725" name="interŝanĝo"/>
 			</Find>
 
 			<FindCharsInRange title = "Serĉu signojn...">

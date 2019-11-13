@@ -305,6 +305,8 @@
 			 	<Item id="1656" name="Pronađi sve"/>
 			 	<Item id="1658" name="U svim podfolderima"/>
 			 	<Item id="1659" name="U skrivenim folderima"/>
+        <Item id="1725" name="zamijeniti"/>
+              
             </Find>
             <GoToLine title="Idi na red #">
                 <Item id="2007" name="Red"/>

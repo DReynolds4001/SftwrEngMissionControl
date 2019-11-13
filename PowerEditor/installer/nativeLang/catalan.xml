@@ -401,6 +401,7 @@ By Hiro5 <groccat at gmail>
 				<Item id="1686" name="Transparència"/>
 				<Item id="1687" name="En perdre el focus"/>
 				<Item id="1688" name="Sempre"/>
+        <Item id="1725" name="intercanvi"/>
 			</Find>
 			<FindCharsInRange title = "Cerca interval de caràcters...">
 				<Item id="2910" name="Cerca"/>

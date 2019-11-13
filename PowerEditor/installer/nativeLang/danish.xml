@@ -317,6 +317,7 @@
                     <Item id="42041" name="Ryd listen over seneste filer"/>
                     <Item id="48016" name="Rediger genvej/slet makro..."/>
                     <Item id="48017" name="Rediger genvej/slet kommando..."/>
+                    <Item id="1725" name="udveksle"/>
                 </Commands>
             </Main>
             <Splitter>

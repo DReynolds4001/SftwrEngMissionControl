@@ -374,6 +374,7 @@
                 <Item id="1641" name="Find All in Current Document"/>
                 <Item id="1686" name="Transparenc&amp;y"/>
                 <Item id="1703" name="&amp;. matches newline"/>
+                <Item id="1725" name="Exchange"/>
             </Find>
 
             <FindCharsInRange title="Find Characters in Range...">

@@ -406,6 +406,7 @@
 			 	<Item id = "1635" name = "Nahradit vše ve všech otevřených dokumentech"/>
 			 	<Item id = "1636" name = "Najít vše ve všech otevřených dokumentech"/>
 			 	<Item id = "1637" name = "Najít v souborech"/>
+        <Item id="1725" name="výměna"/>
 			 	<!--
 				<Item id = "1640" name = "Přepnout dialog"/>
 				-->

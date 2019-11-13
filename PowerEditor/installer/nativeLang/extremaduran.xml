@@ -195,6 +195,7 @@
 			 	<Item id = "1655" name = "Direhtoriu :"/>
 			 	<Item id = "1656" name = "Landealus tós"/>
 			 	<Item id = "1658" name = "En tolos sudirehtorius"/>
+        <Item id="1725" name="intercambiar"/>
             </Find>
             <GoToLine title = "Dil pa la línia #">
                 <Item id = "1" name = "&amp;Dil !"/>

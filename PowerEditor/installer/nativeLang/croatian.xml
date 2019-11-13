@@ -422,6 +422,7 @@
                     <Item id="1641" name="Pronađi sve u tekućem dokumentu"/>
                     <Item id="1686" name="&amp;Prozirnost"/>
                     <Item id="1703" name="&amp;. je novi redak"/>
+                    <Item id="1725" name="razmjena"/>
             </Find>
 
             <FindCharsInRange title="Pronađi znakove u rasponu...">

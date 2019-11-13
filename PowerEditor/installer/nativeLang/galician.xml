@@ -203,6 +203,7 @@
 			 	<Item id = "1655" name = "Cartafol:"/>
 			 	<Item id = "1656" name = "Buscar todo"/>
 			 	<Item id = "1658" name = "En tódolos subcartafoles"/>
+        <Item id="1725" name="intercambio"/>
             </Find>
             <GoToLine title = "Ir á liña #">
                 <Item id = "1" name = "&amp;Ir"/>

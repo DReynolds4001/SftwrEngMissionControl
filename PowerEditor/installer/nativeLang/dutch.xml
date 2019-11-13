@@ -393,6 +393,7 @@
 				<Item id="1703" name="&amp;. vindt \n en \r"/>
 				<Item id="1721" name="▲"/>
 				<Item id="1723" name="▼ Volgende"/>
+        <Item id="1725" name="uitwisseling"/>
 			</Find>
 
 			<FindCharsInRange title="Karakter zoeken in bereik...">

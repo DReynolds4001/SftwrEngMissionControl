@@ -246,6 +246,7 @@
 			 	<Item id = "1660" name = "Vervang in leêrs"/>
 			 	<Item id = "1641" name = "Vind als in huidige dokument"/>
 			 	<Item id = "1686" name = "Deursigtigheid"/>
+        <Item id="1725" name="skakelaar"/>
             </Find>
             <GoToLine title = "Gaan na lyn #">
                 <Item id = "2007" name = "Lyn"/>

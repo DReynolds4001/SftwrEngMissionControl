@@ -381,6 +381,7 @@
 			 	<Item id="1687" name="&amp;Foku galduan"/>
 			 	<Item id="1688" name="Beti&amp;k"/>
 				<Item id="1703" name="&amp;. bat dator lerro-berriarekin"/>
+        <Item id="1725" name="ordezkatu"/>
             </Find>
 			
 			<FindCharsInRange title = "Bilatu Hizkikodeak Mailan...">

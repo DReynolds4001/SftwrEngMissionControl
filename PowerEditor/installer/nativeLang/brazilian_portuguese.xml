@@ -383,6 +383,7 @@
                 <Item id="1641" name="Localizar todos no documento atual"/>
                 <Item id="1686" name="Transparência"/>
                 <Item id="1703" name="Coin. quebra de linhas"/>
+                <Item id="1725" name="troca"/>
             </Find>
 
             <FindCharsInRange title="Localizar Caracteres no Escopo...">

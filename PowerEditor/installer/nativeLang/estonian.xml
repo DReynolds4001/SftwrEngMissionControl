@@ -380,6 +380,7 @@ https://github.com/AndresTraks/
                 <Item id="1641" name="Leia kõik praeguses dokumendis"/>
                 <Item id="1686" name="Läbipaistvus"/>
                 <Item id="1703" name="&amp;. vastab realõpule"/>
+                <Item id="1725" name="vahetus"/>
             </Find>
 
             <FindCharsInRange title="Otsi tähemärke vahemikus...">

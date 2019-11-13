@@ -357,6 +357,7 @@ Asennusohjeet => https://sourceforge.net/forum/message.php?msg_id=5691520
 				<Item id="1687" name="Passiivisena"/>
 				<Item id="1688" name="Aina"/>
 				<Item id="1703" name="Uusilla riveillä" />
+        <Item id="1725" name="vaihto"/>
 			</Find>
 			<Run title="Suorita...">
 				<Item id="1" name="OK" />
