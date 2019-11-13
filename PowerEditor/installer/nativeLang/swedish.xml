@@ -374,6 +374,7 @@
 				<Item id="1641" name="Sök alla i aktuellt dokument"/>
 				<Item id="1686" name="&amp;Transparens"/>
 				<Item id="1703" name="&amp;. matchar ny rad"/>
+        <Item id="1725" name="Utbyta"/>
 			</Find>
 
 			<FindCharsInRange title="Hitta tecken i intervall...">

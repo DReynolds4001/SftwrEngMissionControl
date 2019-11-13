@@ -304,6 +304,7 @@
                 <Item id="1661" name="நடப்பு கோப்பை பின்பற்று."/>
 			 	<Item id="1641" name="அனைத்து கோப்புகளிலும் கண்டுபிடி"/>
 			 	<Item id="1686" name="Transparency"/>
+        <Item id="1725" name="பரிமாற்றம்"/>
             </Find>
             <GoToLine title="...க்கு செல்">
                 <Item id="2007" name="வரி"/>

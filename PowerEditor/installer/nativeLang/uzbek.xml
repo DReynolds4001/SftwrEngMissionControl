@@ -392,6 +392,7 @@ Updater: Shamsiddinov Zafar
 				<Item id="1688" name="Doimoy"/>
 				<Item id="1703" name="va yangi satrlar"/>
 				<Item id="1722" name="Qayta izlashda davom etmoq"/>
+        <Item id="1725" name="Birja"/>
             </Find>
 
             <FindCharsInRange title = "Diapazonda belgilarni izlamoq....">

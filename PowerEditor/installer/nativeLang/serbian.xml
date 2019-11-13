@@ -187,6 +187,7 @@
 			 	<Item id = "1655" name = "Folder :"/>
 			 	<Item id = "1656" name = "Naði sve"/>
 			 	<Item id = "1658" name = "U svim pod-folderima"/>
+        <Item id = "1725" name = "Размена"/>
             </Find>
             <GoToLine title = "Idi u red #">
                 <Item id = "1" name = "&amp;Kreni !"/>

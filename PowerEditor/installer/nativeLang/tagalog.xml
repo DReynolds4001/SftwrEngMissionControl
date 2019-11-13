@@ -246,6 +246,7 @@
 			 	<Item id = "1660" name = "Palitan sa mga pila"/>
 			 	<Item id = "1641" name = "Hanapin lahat sa kasalukuyang kasulatan"/>
 			 	<Item id = "1686" name = "Pagkaka-transparent"/>
+              <Item id="1725" name="Palitan"/>
             </Find>
             <GoToLine title = "Pumunta sa taludtod #">
                 <Item id = "2007" name = "Taludtod"/>

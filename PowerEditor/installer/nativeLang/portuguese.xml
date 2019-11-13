@@ -16,6 +16,7 @@
                     <Item menuId="run" name="E&amp;xecutar"/>
                     <Item idName="Plugins" name="P&amp;lugins"/>
                     <Item idName="Window" name="J&amp;anela"/>
+                  
                 </Entries>
 				<!-- Sub Menu Entries -->
                 <SubEntries>
@@ -350,6 +351,7 @@
 			 	<Item id="1641" name="Encontrar Tudo no Documento Atual"/>
 				<Item id="1686" name="Transparência"/>
 				<Item id="1703" name="&amp;. Corresponde com a nova linha"/>
+        <Item id="1725" name="Troca"/>
 				</Find>
 				<GoToLine title="Ir para...">
 				<Item id="2007" name="Linha"/>

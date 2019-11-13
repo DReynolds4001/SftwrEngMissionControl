@@ -307,6 +307,7 @@
                 <Item id="1661" name="مۇندەرىجىدە"/>
 			 	<Item id="1641" name="ھۈججەتتە ئىزدەش"/>
 			 	<Item id="1686" name="سۈزۈكلىكى"/>
+              <Item id="1725" name="Swap"/>
             </Find>
             <GoToLine title="قۇرغا بېرىش...">
                 <Item id="2007" name="قۇر"/>

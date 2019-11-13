@@ -342,6 +342,7 @@
 			 	<Item id="1641" name="Buscar todo en el documento actual"/>
 			 	<Item id="1686" name="Transparencia"/>
 				<Item id="1703" name="&amp;. en nueva línea"/>
+        <Item id="1725" name="Invertir"/>
 			</Find>
 			<GoToLine title="Ir a línea...">
 				<Item id="2007" name="Línea"/>
