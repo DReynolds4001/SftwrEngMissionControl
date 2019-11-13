@@ -356,7 +356,8 @@ Thank you. -->
                 <Item id="1661" name="ಫಾಲೊ ಕರೆಂಟ್ doc."/>
                 <Item id="1641" name="ಫೈಂಡ್ ಆಲ್ ಇನ್ ಕರೆಂಟ್ ಡಾಕ್ಯುಮೆಂಟ್"/>
                 <Item id="1686" name="ಟ್ರ್ಯಾನ್ಸ್ಪರೆನ್ಸೀ"/>
-				<Item id="1703" name="ಮ್ಯಾಚಸ್ ನೇವಲಿನೆ  (&amp;.)"/>
+                <Item id="1703" name="ಮ್ಯಾಚಸ್ ನೇವಲಿನೆ  (&amp;.)"/>
+                <Item id="1725" name="ವಿನಿಮಯ"/>
             </Find>
             <GoToLine title="ಗೊ ತೋ...">
                 <Item id="2007" name="ಲೈನ್"/>

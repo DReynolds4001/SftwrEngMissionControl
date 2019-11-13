@@ -388,6 +388,7 @@
                 <Item id="1641" name="Keresés a jelenlegi dokumentumban"/>
                 <Item id="1686" name="Átlátszó"/>
                 <Item id="1703" name="&amp;Pont = újsor"/>
+                <Item id="1725" name="Csere"/>
             </Find>
 
             <FindCharsInRange title="Keresés karakterkészletben">

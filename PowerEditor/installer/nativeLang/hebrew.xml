@@ -303,6 +303,7 @@
 				<Item id="1686" name="שקיפות"/>
 				<Item id="1687" name="באובדן מיקוד"/>
 				<Item id="1688" name="תמיד"/>
+        <Item id="1725" name="חליפין"/>
             </Find>
 			<ColumnEditor title="עורך עמודות">
 		        <Item id="1" name="אישור"/>

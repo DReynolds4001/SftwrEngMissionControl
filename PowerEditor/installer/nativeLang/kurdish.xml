@@ -374,6 +374,7 @@
                 <Item id="1641" name="گەڕان لە بەڵگەنامەكانی ئێستا"/>
                 <Item id="1686" name="ڕوونی"/>
                 <Item id="1703" name="&amp;. matches newline"/>
+                <Item id="1725" name="تبادل"/>
             </Find>
 
             <FindCharsInRange title="Find Characters in Range...">

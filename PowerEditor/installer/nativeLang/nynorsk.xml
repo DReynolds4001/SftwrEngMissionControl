@@ -318,6 +318,7 @@
                 <Item id="1661" name="Følg aktivt dokument"/>
                 <Item id="1641" name="Søk etter alle i aktivt dokument"/>
                 <Item id="1686" name="Gjennomsiktig"/>
+                <Item id="1686" name="Erstatte "/>              
             </Find>
             <GoToLine title="Gå til...">
                 <Item id="2007" name="Linje"/>

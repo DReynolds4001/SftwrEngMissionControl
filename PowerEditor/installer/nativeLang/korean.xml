@@ -368,8 +368,9 @@
   <Item id="1660" name="모두 바꾸기"/> 
   <Item id="1661" name="현재와 같은 폴더"/> 
   <Item id="1641" name="현재에서 모두 찾기"/> 
-  <Item id="1686" name="투명도"/> 
-  <Item id="1703" name="새 줄과 일치(&amp;.)"/> 
+  <Item id="1686" name="투명도"/>
+  <Item id="1703" name="새 줄과 일치(&amp;.)"/>
+  <Item id="1725" name="교환"/>
   </Find>
 <FindCharsInRange title="다음 범위에서 문자 찾기">
   <Item id="2" name="닫기"/>

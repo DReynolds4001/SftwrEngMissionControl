@@ -213,6 +213,7 @@
 				<Item id = "1658" name = "&amp;Ënnerrepertoiren"/>
 				<Item id = "1687" name = "Wann inaktiv"/>
 				<Item id = "1688" name = "Ëmmer"/>
+        <Item id = "1725" name = "Austausch"/>
 			</Find>
 			<GoToLine title = "Gehe zu">
 				<Item id = "1" name = "&amp;Goen bei"/>
