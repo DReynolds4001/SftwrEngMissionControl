@@ -389,6 +389,7 @@
 					<Item id="1641" name="Najdi vse v trenutnem dokumentu"/>
 					<Item id="1686" name="Proso&amp;jnost"/>
 					<Item id="1703" name="&amp;. se ujema z novo vrstico"/>
+          <Item id="1725" name="Izmenjava"/>
 				</Find>
 				
              <FindCharsInRange title="Najdi znake v območju...">

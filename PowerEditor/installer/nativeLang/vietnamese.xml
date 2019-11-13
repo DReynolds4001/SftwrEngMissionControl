@@ -349,6 +349,7 @@
                 <Item id="1641" name="Tìm tất cả trong tài liệu hiện thời"/>
                 <Item id="1686" name="Transparency"/>
 				<Item id="1703" name="&amp;. phù hợp với dòng mới"/>
+                <Item id = "1725" name = "Đổi"/>
             </Find>
             <GoToLine title="Đi tới...">
                 <Item id="2007" name="Dòng"/>

@@ -742,7 +742,7 @@ void FindReplaceDlg::resizeDialogElements(LONG newWidth)
 		HWND resizeHwnd = ::GetDlgItem(_hSelf, id);
 		::GetClientRect(resizeHwnd, &rc);
 
-		// Combo box for some reasons selects text on resize. So let's check befor resize if selection is present and clear it manually after resize.
+		// Combo box for some reasons selects text on resize. So let's check before resize if selection is present and clear it manually after resize.
 		DWORD endSelection = 0;
 		SendMessage(resizeHwnd, CB_GETEDITSEL, 0, (LPARAM)&endSelection);
 
@@ -1373,6 +1373,25 @@ INT_PTR CALLBACK FindReplaceDlg::run_dlgProc(UINT message, WPARAM wParam, LPARAM
 				}
 				return TRUE;
 //Option actions
+				
+				case IDSWAPSEARCH:
+				{
+						
+					HWND hFindCombo = ::GetDlgItem(_hSelf, IDFINDWHAT);
+					HWND hReplaceCombo = ::GetDlgItem(_hSelf, IDREPLACEWITH);
+
+					TCHAR FindStr[FINDREPLACE_MAXLENGTH];
+					::SendMessage(hFindCombo, WM_GETTEXT, FINDREPLACE_MAXLENGTH - 1, reinterpret_cast<LPARAM>(FindStr));
+					TCHAR ReplaceStr[FINDREPLACE_MAXLENGTH];
+					::SendMessage(hReplaceCombo, WM_GETTEXT, FINDREPLACE_MAXLENGTH - 1, reinterpret_cast<LPARAM>(ReplaceStr));
+
+					::SetDlgItemText(_hSelf, IDFINDWHAT, ReplaceStr);
+					::SetDlgItemText(_hSelf, IDREPLACEWITH, FindStr);
+					updateCombos();
+
+				}
+				return TRUE;
+
 				case IDREDOTMATCHNL:
 					findHistory._dotMatchesNewline = _options._dotMatchesNewline = isCheckedOrNot(IDREDOTMATCHNL);
 					return TRUE;
@@ -1801,9 +1820,9 @@ bool FindReplaceDlg::processReplace(const TCHAR *txt2find, const TCHAR *txt2repl
 			{
 				generic_string msg;
 				if (moreMatches)
-					msg = pNativeSpeaker->getLocalizedStrFromID("find-status-replaced-next-found", TEXT("Replace: 1 occurrence was replaced. The next occurence found"));
+					msg = pNativeSpeaker->getLocalizedStrFromID("find-status-replaced-next-found", TEXT("Replace: 1 occurrence was replaced. The next occurrence found"));
 				else
-					msg = pNativeSpeaker->getLocalizedStrFromID("find-status-replaced-next-not-found", TEXT("Replace: 1 occurrence was replaced. The next occurence not found"));
+					msg = pNativeSpeaker->getLocalizedStrFromID("find-status-replaced-next-not-found", TEXT("Replace: 1 occurrence was replaced. No more occurrences were found"));
 
 				setStatusbarMessage(msg, FSMessage);
 			}
@@ -2204,7 +2223,7 @@ int FindReplaceDlg::processRange(ProcessOperation op, FindReplaceInfo & findRepl
 		}	
 		++nbProcessed;
 
-        // After the processing of the last string occurence the search loop should be stopped
+        // After the processing of the last string occurrence the search loop should be stopped
         // This helps to avoid the endless replacement during the EOL ("$") searching
 		if (targetStart + foundTextLen == findReplaceInfo._endRange)
             break;
@@ -2444,6 +2463,7 @@ void FindReplaceDlg::enableReplaceFunc(bool isEnable)
 	::ShowWindow(::GetDlgItem(_hSelf, IDREPLACEALL),hideOrShow);
 	::ShowWindow(::GetDlgItem(_hSelf, IDREPLACEINSEL),hideOrShow);
 	::ShowWindow(::GetDlgItem(_hSelf, IDC_REPLACE_OPENEDFILES),hideOrShow);
+	::ShowWindow(::GetDlgItem(_hSelf, IDSWAPSEARCH), hideOrShow);
 	::ShowWindow(::GetDlgItem(_hSelf, IDC_REPLACEINSELECTION), SW_SHOW);
 	::ShowWindow(::GetDlgItem(_hSelf, IDC_IN_SELECTION_CHECK), SW_SHOW);
 	::ShowWindow(::GetDlgItem(_hSelf, IDC_2_BUTTONS_MODE), SW_SHOW);
@@ -2524,6 +2544,7 @@ void FindReplaceDlg::enableFindInFilesControls(bool isEnable)
 	{
 		::ShowWindow(::GetDlgItem(_hSelf, ID_STATICTEXT_REPLACE), SW_SHOW);
 		::ShowWindow(::GetDlgItem(_hSelf, IDREPLACEWITH), SW_SHOW);
+		::ShowWindow(::GetDlgItem(_hSelf, IDSWAPSEARCH), SW_SHOW);
 	}
 	::ShowWindow(::GetDlgItem(_hSelf, IDD_FINDINFILES_REPLACEINFILES), isEnable?SW_SHOW:SW_HIDE);
 	::ShowWindow(::GetDlgItem(_hSelf, IDD_FINDINFILES_FILTERS_STATIC), isEnable?SW_SHOW:SW_HIDE);
@@ -2943,6 +2964,7 @@ void FindReplaceDlg::enableMarkFunc()
 	::ShowWindow(::GetDlgItem(_hSelf, IDREPLACEINSEL),SW_HIDE);
 	::ShowWindow(::GetDlgItem(_hSelf, IDC_REPLACE_OPENEDFILES),SW_HIDE);
 	::ShowWindow(::GetDlgItem(_hSelf, IDC_REPLACEINSELECTION),SW_HIDE);
+	::ShowWindow(::GetDlgItem(_hSelf, IDSWAPSEARCH), SW_HIDE);
 
 	// find controls to hide
 	::ShowWindow(::GetDlgItem(_hSelf, IDC_FINDALL_OPENEDFILES), SW_HIDE);

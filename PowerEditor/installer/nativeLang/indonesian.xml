@@ -376,6 +376,7 @@
                 <Item id="1641" name="Cari Semua dalam Dokumen Ini"/>
                 <Item id="1686" name="Transparansi"/>
                 <Item id="1703" name=". cocok dengan baris baru"/>
+                <Item id="1725" name="Bertukar"/>
             </Find>
 
             <FindCharsInRange title="Cari Karakter dalam Rentang...">

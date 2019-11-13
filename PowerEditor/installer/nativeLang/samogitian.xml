@@ -141,6 +141,8 @@
                 <Item id = "1611" name = "Eaa kou pakeeistea?"/>
                 <Item id = "1608" name = "Keist'"/>
                 <Item id = "1609" name = "Veasos Keistea"/>
+                <Item id = "1725" name = "Veasos Keistea"/>
+                <Item id = "1609" name = "Swɒp"/>
             </Find>
             <GoToLine title = "Eelootea nomerio tvarkiitea">
                 <Item id = "1" name = "&amp;Teanaas eetea"/>

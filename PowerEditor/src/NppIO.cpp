@@ -898,7 +898,11 @@ bool Notepad_plus::fileCloseAll(bool doDeleteBackup, bool isSnapshotMode)
 
 	//closes all documents, makes the current view the only one visible
 
-	//first check if we need to save any file
+	//first confirm action
+	if (!isSnapshotMode && (Notepad_plus::doCloseAllOrNot() == IDNO))
+		return false;
+
+	//then check if we need to save any file
 	for (size_t i = 0; i < _mainDocTab.nbItem() && !noSaveToAll; ++i)
 	{
 		BufferID id = _mainDocTab.getBufferByIndex(i);
@@ -1076,7 +1080,13 @@ bool Notepad_plus::fileCloseAll(bool doDeleteBackup, bool isSnapshotMode)
 
 bool Notepad_plus::fileCloseAllGiven(const std::vector<int> &krvecBufferIndexes)
 {
-	// First check if we need to save any file.
+
+	// First confirm action
+
+	if (Notepad_plus::doCloseAllOrNot() == IDNO)
+		return false;
+
+	// Then check if we need to save any file.
 
 	std::vector<int>::const_iterator itIndexesEnd = krvecBufferIndexes.end();
 	bool noSaveToAll = false;
@@ -1200,7 +1210,11 @@ bool Notepad_plus::fileCloseAllButCurrent()
 
 	//closes all documents, makes the current view the only one visible
 
-	//first check if we need to save any file
+	//first confirm action
+	if (Notepad_plus::doCloseAllOrNot() == IDNO)
+		return false;
+
+	//then check if we need to save any file
 	for (size_t i = 0; i < _mainDocTab.nbItem() && !noSaveToAll; ++i)
 	{
 		BufferID id = _mainDocTab.getBufferByIndex(i);
@@ -1499,15 +1513,20 @@ bool Notepad_plus::fileSaveAs(BufferID id, bool isSaveCopy)
 
 	if (pfn)
 	{
+
 		BufferID other = _pDocTab->findBufferByName(pfn);
 		if (other == BUFFER_INVALID)
 			other = _pNonDocTab->findBufferByName(pfn);
 
 		if (other == BUFFER_INVALID)	//can save, as both (same and other) view don't contain buffer
 		{
+			if (!buf->isUntitled())
+				_lastRecentFileList.add(bufferID->getFullPathName());
+
 			bool res = doSave(bufferID, pfn, isSaveCopy);
 			//buf->setNeedsLexing(true);	//commented to fix wrapping being removed after save as (due to SCI_CLEARSTYLE or something, seems to be Scintilla bug)
 			//Changing lexer after save seems to work properly
+
 			return res;
 		}
 		else		//cannot save, other view has buffer already open, activate it

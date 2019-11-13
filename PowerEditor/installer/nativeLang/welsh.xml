@@ -356,6 +356,7 @@ gan/by Aled Powell
                 <Item id="1641" name="Canfod y Cwbl yn y Ddogfen Presennol"/>
                 <Item id="1686" name="Tryloywder"/>
 				<Item id="1703" name="&amp;. yn llinell newydd"/>
+                <Item id="1725" name="Cyfnewid"/>
             </Find>
             <GoToLine title="Mynd i...">
                 <Item id="2007" name="Llinell"/>

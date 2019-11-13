@@ -386,7 +386,7 @@
                 <Item id="1641" name="Căutare toate în   documentul curent"/>
                 <Item id="1686" name="Transpa&amp;rență"/>
                 <Item id="1703" name="&amp;. este \r sau \n"/>
-
+                <Item id="1725" name="Schimb"/>
             </Find>
 
             <FindCharsInRange title="Căutare caractere în interval...">

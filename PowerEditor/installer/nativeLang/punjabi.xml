@@ -377,6 +377,7 @@
                 <Item id="1641" name="ਮੌਜੂਦਾ ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਸਾਰੇ ਲੱਭੋ"/>
                 <Item id="1686" name="ਪਾਰਦਰਸ਼ਤਾ"/>
                 <Item id="1703" name="&amp;. ਲਾਈਨ ਨਾਲ ਮਿਲਦਾ ਹੈ"/>
+                <Item id="1725" name="ਐਕਸਚੇਂਜ"/>
             </Find>
             <FindCharsInRange title="Find Characters in Range...">
                 <Item id="2" name="ਬੰਦ ਕਰੋ"/>

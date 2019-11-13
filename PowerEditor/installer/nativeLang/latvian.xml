@@ -353,6 +353,7 @@
 				<Item id="1641" name="Atrast visu pašreizējā dokumentā"/>
 				<Item id="1686" name="Caurspīdīgums"/>
 				<Item id="1703" name="&amp;. arī jaunu rindu"/>
+        <Item id="1725" name="Apmaiņa"/>
 			</Find>
             <FindCharsInRange title = "Atrast simbolu kopu">
                 <Item id = "2910" name = "&amp;Atrast"/>

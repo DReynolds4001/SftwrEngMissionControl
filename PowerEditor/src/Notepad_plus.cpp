@@ -1915,6 +1915,17 @@ int Notepad_plus::doCloseOrNot(const TCHAR *fn)
 		fn);
 }
 
+int Notepad_plus::doCloseAllOrNot(void)
+{
+	return _nativeLangSpeaker.messageBox("DoCloseAllOrNot",
+		_pPublicInterface->getHSelf(),
+		TEXT("Are you sure you want to close ALL selected documents?"),
+		TEXT("Close All"),
+		MB_YESNO | MB_ICONQUESTION | MB_APPLMODAL,
+		0, // not used
+		0);
+}
+
 int Notepad_plus::doDeleteOrNot(const TCHAR *fn)
 {
 	return _nativeLangSpeaker.messageBox("DoDeleteOrNot",
