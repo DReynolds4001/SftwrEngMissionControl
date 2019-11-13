@@ -899,7 +899,7 @@ bool Notepad_plus::fileCloseAll(bool doDeleteBackup, bool isSnapshotMode)
 	//closes all documents, makes the current view the only one visible
 
 	//first confirm action
-	if (Notepad_plus::doCloseAllOrNot() == IDNO)
+	if (!isSnapshotMode && (Notepad_plus::doCloseAllOrNot() == IDNO))
 		return false;
 
 	//then check if we need to save any file
