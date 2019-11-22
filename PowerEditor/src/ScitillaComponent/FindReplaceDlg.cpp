@@ -1002,10 +1002,19 @@ INT_PTR CALLBACK FindReplaceDlg::run_dlgProc(UINT message, WPARAM wParam, LPARAM
 
 		case WM_COMMAND : 
 		{
-			bool isMacroRecording = (::SendMessage(_hParent, WM_GETCURRENTMACROSTATUS,0,0) == MACRO_RECORDING_IN_PROGRESS);
+			bool isMacroRecording = (::SendMessage(_hParent, WM_GETCURRENTMACROSTATUS, 0, 0) == MACRO_RECORDING_IN_PROGRESS);
 			NppParameters& nppParamInst = NppParameters::getInstance();
 			FindHistory & findHistory = nppParamInst.getFindHistory();
-			switch (LOWORD(wParam))
+			WORD newParam;
+
+			if ((LOWORD(wParam) == IDREPLACE) && (_currentStatus == FINDINFILES_DLG))
+				newParam = IDD_FINDINFILES_REPLACEINFILES;
+			else if ((LOWORD(wParam) == IDD_FINDINFILES_REPLACEINFILES) && (_currentStatus == REPLACE_DLG))
+				newParam = IDREPLACE;
+			else
+				newParam = LOWORD(wParam);
+
+			switch (newParam)
 			{
 //Single actions
 				case IDC_2_BUTTONS_MODE:
