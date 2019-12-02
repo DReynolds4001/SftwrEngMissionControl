@@ -919,6 +919,7 @@
                         <Element name="Enable for all opened files"/>
                         <Element name="Disable"/>
                     </ComboBox>
+					
                     <Item id="6308" name="Minimize to system tray"/>
                     <Item id="6312" name="File Status Auto-Detection"/>
                     <Item id="6313" name="Update silently"/>
